@@ -18,7 +18,7 @@
   <a href="https://youtube.com/@wd006">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&height=28" alt="YouTube"/>
   </a>
-  <a href="https://wd006.rf.gd">
+  <a href="#SOON:https://wd006.rf.gd">
     <img src="https://img.shields.io/badge/Website-00C8FF?style=for-the-badge&logo=google-chrome&logoColor=white&height=28" alt="Website"/>
   </a>
   <a href="https://www.npmjs.com/~wd006">
