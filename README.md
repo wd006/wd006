@@ -37,11 +37,11 @@
 ###
 
 <div align="center">
-  <a href="https://github.com/wd006">
-    <img src="https://img.shields.io/github/followers/wd006?label=Followers&style=for-the-badge&logo=github&logoColor=white&height=28" alt="GitHub Followers"/>
+  <a href="https://github.com/wd006?tab=followers">
+    <img src="https://img.shields.io/github/followers/wd006?label=Followers&style=for-the-badge&logo=github&logoColor=white&height=28" alt="GitHub Followers Counter"/>
   </a>
-  <a href="https://github.com/wd006?tab=repositories">
-    <img src="https://img.shields.io/github/stars/wd006?label=Stars&style=for-the-badge&logo=github&logoColor=white&height=28" alt="GitHub Stars"/>
+  <a href="https://github.com/wd006?tab=repositories&q=&type=&language=&sort=stargazers">
+    <img src="https://img.shields.io/github/stars/wd006?label=Stars&style=for-the-badge&logo=github&logoColor=white&height=28" alt="GitHub Stars Counter"/>
 </a>
   <!--
   <a href="https://github.com/wd006?tab=watchers">
