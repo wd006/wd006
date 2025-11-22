@@ -1,0 +1,16 @@
+{
+  "config": {
+    "username": "wd006",
+    "os": "macos2",
+    "theme": "dracula"
+  },
+  "steps": [
+    { "type": "input", "text": "whoami" },
+    { "type": "output", "text": "Kullanıcı Adı: {{github.username}}\nTakipçi: {{github.followers}}" },
+    { "type": "pause", "delay_ms": 1000 },
+    { "type": "input", "text": "./get-latest-activity" },
+    { "type": "output", "text": "{{github.latest_activity}}" },
+    { "type": "input", "text": "cat ./favori-teknolojim.txt" },
+    { "type": "output", "text": "PHP ve Imagick ile harikalar yaratmak!" }
+  ]
+}
