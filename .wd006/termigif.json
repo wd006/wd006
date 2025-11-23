@@ -23,7 +23,7 @@
     },
     {
       "type": "input",
-      "text": "system-check --status"
+      "text": "system-check <accent>--status</accent>"
     },
     {
       "type": "output",
