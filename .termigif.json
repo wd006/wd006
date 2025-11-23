@@ -13,14 +13,6 @@
     {"type": "output", "text": "/home/wd006/projects"},
     {"type": "pause", "delay_ms": 1000},
 
-    {"type": "input", "text": "ls -la", "color": "#b58900"},
-    {"type": "output", "text": "total 24\n...file1.txt"},
-    {"type": "pause", "delay_ms": 2000},
-
-    {"type": "input", "text": "echo 'Hello, World!' > greeting.txt"},
-    {"type": "output", "text": ""},
-    {"type": "pause", "delay_ms": 500},
-
     {"type": "input", "text": "git status", "color": "#cb4b16"},
     {"type": "output", "text": "On branch main\nUntracked files:\n greeting.txt"},
     {"type": "pause", "delay_ms": 1200},
