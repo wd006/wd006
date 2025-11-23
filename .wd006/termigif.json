@@ -3,7 +3,10 @@
     "username": "wd006",
     "os": "macos2",
     "theme": "dracula",
-    "bg_color": "#1c1c1c"
+    "colors": {
+      "bg_color": "#1c1c1c",
+      "output_color": "#ffc100"
+    }
   },
   "steps": [
     {
