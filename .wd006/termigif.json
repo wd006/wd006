@@ -15,7 +15,7 @@
     },
     {
       "type": "output",
-      "text": "I'm, TermiGIF!"
+      "text": "I'm, <accent>TermiGIF!</accent>"
     },
     {
       "type": "pause",
