@@ -1,61 +1,235 @@
 {
   "config": {
-    "username": "wd006",
-    "os": "macos2",
-    "theme": "dracula",
-    "colors": {
-      "bg_color": "#1c1c1c",
-      "output_color": "#ffc100"
-    }
+  "username": "wd006",
+  "os": "macos",
+  "theme": "dracula",
+  "colors": {
+  "bg_color": "#002b36",
+  "output_color": "#839496"
+  }
   },
   "steps": [
-    {
-      "type": "input",
-      "text": "whoami"
-    },
-    {
-      "type": "output",
-      "text": "I'm, <accent>TermiGIF!</accent>"
-    },
-    {
-      "type": "pause",
-      "delay_ms": 1500
-    },
-    {
-      "type": "input",
-      "text": "system-check <accent>--status</accent>"
-    },
-    {
-      "type": "output",
-      "text": "✅ System Status: OK",
-      "color": "#50fa7b"
-    },
-    {
-      "type": "pause",
-      "delay_ms": 1500
-    },
-    {
-      "type": "input",
-      "text": "cat /var/log/warn.log",
-      "color": "#f1fa8c"
-    },
-    {
-      "type": "output",
-      "text": "⚠️ WARNING: Low free disk space!",
-      "color": "#ffb86c"
-    },
-    {
-      "type": "pause",
-      "delay_ms": 1500
-    },
-    {
-      "type": "input",
-      "text": "cat /var/log/error.log"
-    },
-    {
-      "type": "output",
-      "text": "❌ ERROR: Service not responsing.\nTry again later.",
-      "color": "#ff5555"
-    }
+  {
+  "type": "input",
+  "text": "pwd"
+  },
+  {
+  "type": "output",
+  "text": "/home/user42/projects"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1000
+  },
+  {
+  "type": "input",
+  "text": "ls -la",
+  "color": "#b58900"
+  },
+  {
+  "type": "output",
+  "text": "total 24\ndrwxr-xr-x  3 user42 user42 4096 Nov 23 10:00 .\ndrwxr-xr-x  5 user42 user42 4096 Nov 22 09:00 ..\n-rw-r--r--  1 user42 user42  123 Nov 23 10:00 file1.txt\n-rw-r--r--  1 user42 user42  456 Nov 23 10:00 script.sh",
+  "color": "#839496"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 2000
+  },
+  {
+  "type": "input",
+  "text": "echo 'Hello, World!' > greeting.txt"
+  },
+  {
+  "type": "output",
+  "text": ""
+  },
+  {
+  "type": "pause",
+  "delay_ms": 500
+  },
+  {
+  "type": "input",
+  "text": "cat greeting.txt"
+  },
+  {
+  "type": "output",
+  "text": "Hello, World!",
+  "color": "#2aa198"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1500
+  },
+  {
+  "type": "input",
+  "text": "git status",
+  "color": "#cb4b16"
+  },
+  {
+  "type": "output",
+  "text": "On branch main\nYour branch is up to date with 'origin/main'.\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\ngreeting.txt\n\nnothing added to commit but untracked files present (use \"git add\" to track)"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1200
+  },
+  {
+  "type": "input",
+  "text": "git add greeting.txt"
+  },
+  {
+  "type": "output",
+  "text": ""
+  },
+  {
+  "type": "pause",
+  "delay_ms": 800
+  },
+  {
+  "type": "input",
+  "text": "git commit -m 'Add greeting file'"
+  },
+  {
+  "type": "output",
+  "text": "[main 123abc] Add greeting file\n 1 file changed, 1 insertion(+)\n create mode 100644 greeting.txt",
+  "color": "#859900"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1800
+  },
+  {
+  "type": "input",
+  "text": "curl https://api.example.com/data",
+  "color": "#dc322f"
+  },
+  {
+  "type": "output",
+  "text": {"status": "success", "data": "Sample response"}
+  },
+  {
+  "type": "pause",
+  "delay_ms": 2500
+  },
+  {
+  "type": "input",
+  "text": "python -c 'print(2 + 2)'"
+  },
+  {
+  "type": "output",
+  "text": "4",
+  "color": "#268bd2"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1000
+  },
+  {
+  "type": "input",
+  "text": "df -h"
+  },
+  {
+  "type": "output",
+  "text": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sda1       100G   50G   50G  50% /"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1300
+  },
+  {
+  "type": "input",
+  "text": "top -b -n1 | head -n 10",
+  "color": "#6c71c4"
+  },
+  {
+  "type": "output",
+  "text": "top - 10:00:00 up 1 day,  2:00,  1 user,  load average: 0.00, 0.01, 0.05\nTasks: 100 total,   1 running,  99 sleeping,   0 stopped,   0 zombie\n%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st\nMiB Mem :   8192.0 total,   4096.0 free,   2048.0 used,   2048.0 buff/cache\nMiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6144.0 avail Mem"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 2000
+  },
+  {
+  "type": "input",
+  "text": "mkdir new_folder"
+  },
+  {
+  "type": "output",
+  "text": ""
+  },
+  {
+  "type": "pause",
+  "delay_ms": 700
+  },
+  {
+  "type": "input",
+  "text": "cd new_folder"
+  },
+  {
+  "type": "output",
+  "text": ""
+  },
+  {
+  "type": "pause",
+  "delay_ms": 900
+  },
+  {
+  "type": "input",
+  "text": "touch file_inside.txt"
+  },
+  {
+  "type": "output",
+  "text": ""
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1100
+  },
+  {
+  "type": "input",
+  "text": "ls"
+  },
+  {
+  "type": "output",
+  "text": "file_inside.txt"
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1400
+  },
+  {
+  "type": "input",
+  "text": "cd .."
+  },
+  {
+  "type": "output",
+  "text": ""
+  },
+  {
+  "type": "pause",
+  "delay_ms": 600
+  },
+  {
+  "type": "input",
+  "text": "rm -rf new_folder",
+  "color": "#d33682"
+  },
+  {
+  "type": "output",
+  "text": ""
+  },
+  {
+  "type": "pause",
+  "delay_ms": 1600
+  },
+  {
+  "type": "input",
+  "text": "echo 'Done!'"
+  },
+  {
+  "type": "output",
+  "text": "Done!",
+  "color": "#93a1a1"
+  }
   ]
-}
+  }
