@@ -2,15 +2,57 @@
   "config": {
     "username": "wd006",
     "os": "macos2",
-    "theme": "dracula"
+    "theme": "dracula",
+    "bg_color": "#1c1c1c"
   },
   "steps": [
-    { "type": "input", "text": "whoami" },
-    { "type": "output", "text": "My name is {{github.username}}\n i have {{github.followers}} followers in GitHub" },
-    { "type": "pause", "delay_ms": 1000 },
-    { "type": "input", "text": "./get-latest-activity" },
-    { "type": "output", "text": "{{github.latest_activity}}" },
-    { "type": "input", "text": "cat /skills/favorites.txt" },
-    { "type": "output", "text": "PHP, HTML, JS (shortly, web developing)" }
+    {
+      "type": "input",
+      "text": "whoami"
+    },
+    {
+      "type": "output",
+      "text": "I'm, TermiGIF!"
+    },
+    {
+      "type": "pause",
+      "delay_ms": 1500
+    },
+    {
+      "type": "input",
+      "text": "system-check --status"
+    },
+    {
+      "type": "output",
+      "text": "✅ System Status: OK",
+      "color": "#50fa7b"
+    },
+    {
+      "type": "pause",
+      "delay_ms": 1500
+    },
+    {
+      "type": "input",
+      "text": "cat /var/log/warn.log",
+      "color": "#f1fa8c"
+    },
+    {
+      "type": "output",
+      "text": "⚠️ WARNING: Low free disk space!",
+      "color": "#ffb86c"
+    },
+    {
+      "type": "pause",
+      "delay_ms": 1500
+    },
+    {
+      "type": "input",
+      "text": "cat /var/log/error.log"
+    },
+    {
+      "type": "output",
+      "text": "❌ ERROR: Service not responsing.\nTry again later.",
+      "color": "#ff5555"
+    }
   ]
 }
