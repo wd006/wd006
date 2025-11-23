@@ -6,11 +6,11 @@
   },
   "steps": [
     { "type": "input", "text": "whoami" },
-    { "type": "output", "text": "Kullanıcı Adı: {{github.username}}\nTakipçi: {{github.followers}}" },
+    { "type": "output", "text": "My name is {{github.username}}\n i have {{github.followers}} followers in GitHub" },
     { "type": "pause", "delay_ms": 1000 },
     { "type": "input", "text": "./get-latest-activity" },
     { "type": "output", "text": "{{github.latest_activity}}" },
-    { "type": "input", "text": "cat ./favori-teknolojim.txt" },
-    { "type": "output", "text": "PHP ve Imagick ile harikalar yaratmak!" }
+    { "type": "input", "text": "cat /skills/favorites.txt" },
+    { "type": "output", "text": "PHP, HTML, JS (shortly, web developing)" }
   ]
 }
